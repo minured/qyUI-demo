@@ -1,0 +1,33 @@
+[submodule "src/views/order"]
+	path = src/views/order
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/order.git
+[submodule "src/views/admin"]
+	path = src/views/admin
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/admin.git
+[submodule "src/views/activity"]
+	path = src/views/activity
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/activity.git
+[submodule "src/views/im"]
+	path = src/views/im
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/im.git
+[submodule "src/views/goods"]
+	path = src/views/goods
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/goods.git
+[submodule "src/views/shop"]
+	path = src/views/shop
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/shop.git
+[submodule "src/views/store"]
+	path = src/views/store
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/store.git
+[submodule "src/views/pay"]
+	path = src/views/pay
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/pay.git
+[submodule "src/views/article"]
+	path = src/views/article
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/article.git
+[submodule "src/views/test"]
+	path = src/views/test
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/test.git
+[submodule "src/views/user"]
+	path = src/views/user
+	url = ssh://git@dev.719471.net:6822/qy/qui/module/user.git
