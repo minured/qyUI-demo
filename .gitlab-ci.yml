@@ -11,8 +11,8 @@ deploy_develop:
     - "cp /data/wwwroot/env/demo/qy-mobile/.env.production .env.production"
     - "/usr/local/bin/cnpm install"
     - "/usr/local/bin/cnpm run build"
-    - "rm -r -f /data/wwwroot/api.demo.test.719471.net"
-    - "ln -s ./dist /data/wwwroot/api.demo.test.719471.net"
+#    - "rm -r -f /data/wwwroot/api.demo.test.719471.net"
+#    - "ln -s ./dist /data/wwwroot/api.demo.test.719471.net"
   only:
     - test
 
