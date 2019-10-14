@@ -5,25 +5,38 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <van-tabbar>
+      <van-tabbar-item icon="home-o">标签</van-tabbar-item>
+      <van-tabbar-item icon="search">标签</van-tabbar-item>
+      <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
+      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  #app {
+    background-color: #f5f5f5;
+    font-size: 14px;
   }
-}
+
+  .group {
+    margin-bottom: .2rem;
+  }
+
+  .clear {
+    clear: both
+  }
+
+  .padding {
+    padding: .2rem;
+    background-color: #ffffff;
+  }
+
+  #app .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+  }
 </style>
