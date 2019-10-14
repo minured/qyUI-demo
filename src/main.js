@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './registerServiceWorker'
+import 'amfe-flexible'
+import VueClipboard from 'vue-clipboard2'
 import {
   Dialog,
   Row,
@@ -58,7 +60,9 @@ import {
   NoticeBar,
   CheckboxGroup
 } from 'vant'
+import {quiMobile, http, encryption} from 'qui-mobile'
 
+Vue.use(VueClipboard)
 Vue.use(Dialog)
     .use(Row)
     .use(Col)
@@ -112,6 +116,9 @@ Vue.use(Dialog)
     .use(Sku)
     .use(NoticeBar)
     .use(CheckboxGroup)
+Vue.use(quiMobile)
+    .use(http)
+    .use(encryption)
 
 Vue.config.productionTip = false
 

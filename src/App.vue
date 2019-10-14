@@ -1,22 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-    <van-tabbar>
-      <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="search">标签</van-tabbar-item>
-      <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-      <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-    </van-tabbar>
+    <router-view v-if="$store.state.system"/>
+    <img v-else class="cover" :src="'./static/unpackage/res/splashscreen/1080x1882.png'"/>
   </div>
 </template>
 
+<script>
+  export default {
+    name: 'app',
+    methods: {
+      async getMain() {
+        let res = await this.$http.get('system/client/main')
+        this.$store.commit('setSystem', res.data.system)
+        this.$store.commit('setUser', res.data.user)
+      }
+    },
+    mounted() {
+      this.getMain()
+    },
+  }
+</script>
+
 <style lang="scss">
-  #app {
+  body {
     background-color: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+  }
+  #app {
     font-size: 14px;
   }
 
