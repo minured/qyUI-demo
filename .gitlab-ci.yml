@@ -1,0 +1,24 @@
+stages:
+  - deploy
+
+deploy_develop:
+  stage: deploy
+  tags:
+    - test
+  script:
+    - "git submodule init"
+    - "git submodule update"
+    - cp /data/wwwroot/env/demo/qy-mobile/.env.production .env.production
+    - /usr/local/bin/cnpm install
+    - /usr/local/bin/cnpm run build
+  only:
+    - test
+
+deploy_stage:
+  stage: deploy
+  tags:
+      - release
+  script:
+    - sh ci/release.sh
+  only:
+    - master

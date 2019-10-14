@@ -6,61 +6,63 @@ import './registerServiceWorker'
 import 'amfe-flexible'
 import VueClipboard from 'vue-clipboard2'
 import {
-  Dialog,
-  Row,
-  Col,
-  Button,
-  Icon,
-  Cell,
-  CellGroup,
-  NavBar,
-  AddressEdit,
-  Tabbar,
-  TabbarItem,
-  Grid,
-  GridItem,
-  Sidebar,
-  SidebarItem,
-  List,
-  ContactCard,
-  ContactList,
-  ContactEdit,
-  Popup,
-  AddressList,
-  Field,
-  Tab,
-  Tabs,
-  Card,
-  Swipe,
-  SwipeItem,
-  Lazyload,
-  Divider,
-  GoodsAction,
-  GoodsActionIcon,
-  GoodsActionButton,
-  Picker,
-  DatetimePicker,
-  Area,
-  Tag,
-  SubmitBar,
-  PullRefresh,
-  RadioGroup,
-  Radio,
-  DropdownMenu,
-  DropdownItem,
-  Panel,
-  Uploader,
-  Step,
-  Steps,
-  Search,
-  ActionSheet,
-  Checkbox,
-  Image,
-  Sku,
-  NoticeBar,
-  CheckboxGroup
+    Dialog,
+    Row,
+    Col,
+    Button,
+    Icon,
+    Cell,
+    CellGroup,
+    NavBar,
+    AddressEdit,
+    Tabbar,
+    TabbarItem,
+    Grid,
+    GridItem,
+    Sidebar,
+    SidebarItem,
+    List,
+    ContactCard,
+    ContactList,
+    ContactEdit,
+    Popup,
+    AddressList,
+    Field,
+    Tab,
+    Tabs,
+    Card,
+    Swipe,
+    SwipeItem,
+    Lazyload,
+    Divider,
+    GoodsAction,
+    GoodsActionIcon,
+    GoodsActionButton,
+    Picker,
+    DatetimePicker,
+    Area,
+    Tag,
+    SubmitBar,
+    PullRefresh,
+    RadioGroup,
+    Radio,
+    DropdownMenu,
+    DropdownItem,
+    Panel,
+    Uploader,
+    Step,
+    Steps,
+    Search,
+    ActionSheet,
+    Checkbox,
+    Image,
+    Sku,
+    NoticeBar,
+    CheckboxGroup,
+    TreeSelect,
 } from 'vant'
 import {quiMobile, http, encryption} from 'qui-mobile'
+import qy from './components/qy'
 
 Vue.use(VueClipboard)
 Vue.use(Dialog)
@@ -116,14 +118,16 @@ Vue.use(Dialog)
     .use(Sku)
     .use(NoticeBar)
     .use(CheckboxGroup)
+    .use(TreeSelect)
 Vue.use(quiMobile)
     .use(http)
     .use(encryption)
+Vue.use(qy)
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    store,
+    render: h => h(App)
 }).$mount('#app')

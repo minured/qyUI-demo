@@ -31,3 +31,6 @@
 [submodule "src/views/user"]
 	path = src/views/user
 	url = ssh://git@dev.719471.net:6822/qy/qui/module/user.git
+[submodule "src/components/qy"]
+	path = src/components/qy
+	url = ssh://git@dev.719471.net:6822/qy/qui/wap-components/qy.git
