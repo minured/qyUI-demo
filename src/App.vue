@@ -9,10 +9,11 @@
     export default {
         name: 'app',
         methods: {
-            async getMain() {
-                let res = await this.$http.get('system/client/main')
-                this.$store.commit('setSystem', res.data.system)
-                this.$store.commit('setUser', res.data.user)
+            getMain() {
+                this.$http.get('system/client/main').then((data) => {
+                    this.$store.commit('setSystem', data.system)
+                    this.$store.commit('setUser', data.user)
+                })
             }
         },
         mounted() {
@@ -40,7 +41,7 @@
     }
 
     .content {
-      background-color: #ffffff;
+        background-color: #ffffff;
     }
 
     .padding {

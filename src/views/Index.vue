@@ -6,7 +6,6 @@
         />
         <van-cell title="首页" is-link to="/payIndex"/>
         <van-cell title="商城" is-link to="/shopIndex"/>
-        <van-cell title="测试分享" is-link to="/testShare"/>
     </qy-page>
 </template>
 
