@@ -1,0 +1,47 @@
+.article_head {
+    height: 1.46667rem;
+}
+
+.article_head ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    height: 0.93327rem;
+    padding: .26667rem;
+}
+
+.middle {
+    width: 75%;
+}
+
+.article_head ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user_avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user_avatar img {
+    height: .74667rem;
+}
+
+.van-search {
+    padding: 0;
+    margin: 0 .32rem;
+    width: 100%;
+}
+
+.van-search__content {
+    border-radius: .4rem;
+}
+
+.article_head .right {
+    float: right;
+}
