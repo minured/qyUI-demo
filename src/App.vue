@@ -2,6 +2,7 @@
     <div id="app">
         <router-view v-if="$store.state.system"/>
         <img v-else class="cover" :src="'./static/unpackage/res/splashscreen/1080x1882.png'"/>
+        <qy-share :store="$store"/>
     </div>
 </template>
 
@@ -52,13 +53,41 @@
         clear: both
     }
 
-    .content {
+    .contents {
         background-color: #ffffff;
+    }
+
+    .bottom_nav .placeholder {
+        height: 1.5rem;
+    }
+
+    .title {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .description {
+        font-size: 13px;
+        color: rgb(144, 144, 144);
+        line-height: 20px;
+        max-height: 60px;
+        letter-spacing: 1px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    .link-title {
+        color: rgb(180, 180, 180);
     }
 
     .padding {
         padding: .4rem;
-        background-color: #ffffff;
+    }
+
+    .qy-list .padding {
+        padding-top: 0;
     }
 
     #app .cover {
@@ -66,5 +95,36 @@
         width: 100%;
         height: 100%;
         z-index: 99999;
+    }
+
+    .article-list-item .pay {
+        color: rgb(235, 42, 42);
+        text-align: center;
+        background-color: rgb(254, 195, 183);
+        margin-top: 0.3rem;
+        border-radius: 0.2rem;
+        line-height: .9rem;
+    }
+
+    .article-list-item .pay .lock img {
+        width: 15px;
+        height: 11px;
+    }
+
+    .article-list-item .detail {
+        color: #b4b4b4;
+        line-height: 0.34rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        font-size: 12px;
+        letter-spacing: 0;
+        overflow: hidden;
+    }
+
+    .article-list-item .detail span {
+        padding-right: .2rem;
+    }
+    .article-list-item .detail .share {
+        font-size: 14px;
     }
 </style>
