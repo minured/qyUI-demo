@@ -34,3 +34,6 @@
 [submodule "src/components/qy"]
 	path = src/components/qy
 	url = ssh://git@dev.719471.net:6822/qy/qui/wap-components/qy.git
+[submodule "src/views/stock"]
+	path = src/views/stock
+	url = http://dev.719471.net:6880/qy/qui/module/stock.git

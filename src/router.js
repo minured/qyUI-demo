@@ -8,6 +8,7 @@ import im from './views/im/router'
 import order from './views/order/router'
 import pay from './views/pay/router'
 import shop from './views/shop/router'
+import stock from './views/stock/router'
 import store from './views/store/router'
 import test from './views/test/router'
 import user from './views/user/router'
@@ -28,6 +29,7 @@ routes = routes.concat(im)
 routes = routes.concat(order)
 routes = routes.concat(pay)
 routes = routes.concat(shop)
+routes = routes.concat(stock)
 routes = routes.concat(store)
 routes = routes.concat(test)
 routes = routes.concat(user)

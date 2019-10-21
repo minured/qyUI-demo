@@ -12,9 +12,9 @@
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "core-js": "^2.6.5",
-    "qui-mobile": "git+ssh://git@dev.719471.net:6822/qy/qui/mobile.git",
+    "qui-mobile": "git+http://dev.719471.net:6880/qy/qui/mobile.git",
     "register-service-worker": "^1.6.2",
-    "vant": "^2.2.7",
+    "vant": "^2.2.8",
     "vue": "^2.6.10",
     "vue-clipboard2": "^0.3.1",
     "vue-router": "^3.0.3",

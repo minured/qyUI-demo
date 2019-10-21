@@ -9,10 +9,21 @@
     export default {
         name: 'app',
         methods: {
-            getMain() {
+            async getMain() {
+                let data = await this.$http.get('app/main/info', {params: {host: window.location.host}})
+                if (data && data.id) {
+                    this.$http.interceptors.request.use(config => {
+                        config.headers['App-Id'] = data.id
+                        return config
+                    })
+                }
                 this.$http.get('system/client/main').then((data) => {
+                    this.$store.commit('setConfig', data.config)
                     this.$store.commit('setSystem', data.system)
                     this.$store.commit('setUser', data.user)
+                    this.$store.commit('setMenu', {bottom: data.menu_bottom})
+                }).catch((e) => {
+                    this.qy.requestStatusHandle(e)
                 })
             }
         },
@@ -30,6 +41,7 @@
 
     #app {
         font-size: 14px;
+        line-height: 22px;
     }
 
     .group {
@@ -45,7 +57,7 @@
     }
 
     .padding {
-        padding: .2rem;
+        padding: .4rem;
         background-color: #ffffff;
     }
 
