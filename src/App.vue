@@ -61,9 +61,35 @@
         height: 1.5rem;
     }
 
+    .title_box {
+        margin-bottom: .4rem;
+    }
+
     .title {
         font-size: 16px;
         padding: 10px 0;
+    }
+
+    .info .title {
+        font-size: 24px;
+        line-height: 34px;
+        color: rgb(50, 50, 50);
+        margin: 0;
+    }
+
+    .detail {
+        color: #b4b4b4;
+        line-height: 0.34rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        font-size: 12px;
+        letter-spacing: 0;
+        overflow: hidden;
+    }
+
+    .info .description {
+        background-color: #f1f1f1;
+        padding: 4px;
     }
 
     .description {
@@ -97,7 +123,7 @@
         z-index: 99999;
     }
 
-    .article-list-item .pay {
+    .article-pay {
         color: rgb(235, 42, 42);
         text-align: center;
         background-color: rgb(254, 195, 183);
@@ -106,25 +132,29 @@
         line-height: .9rem;
     }
 
-    .article-list-item .pay .lock img {
+    .article-pay .lock img {
         width: 15px;
         height: 11px;
-    }
-
-    .article-list-item .detail {
-        color: #b4b4b4;
-        line-height: 0.34rem;
-        padding-top: 0.15rem;
-        padding-bottom: 0.15rem;
-        font-size: 12px;
-        letter-spacing: 0;
-        overflow: hidden;
     }
 
     .article-list-item .detail span {
         padding-right: .2rem;
     }
+
     .article-list-item .detail .share {
         font-size: 14px;
+    }
+
+    .van-nav-bar__title {
+        letter-spacing: 0.05333rem;
+    }
+
+    .van-nav-bar .van-icon {
+        color: rgb(50, 50, 50);
+        font-size: 22px;
+    }
+
+    .van-hairline--bottom {
+        border-bottom: 1px solid rgb(229, 229, 229);
     }
 </style>
