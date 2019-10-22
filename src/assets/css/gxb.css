@@ -11,7 +11,7 @@
     background: #fff;
     display: flex;
     height: 0.93327rem;
-    padding: .26667rem;
+    padding: .26667rem .5rem;
 }
 
 .middle {
@@ -44,4 +44,73 @@
 
 .article_head .right {
     float: right;
+}
+
+.van-swipe-item img {
+    border-radius: .3rem;
+    width: 95%!important;
+    height: 3rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.van-ellipsis div div {
+    font-size: .34rem;
+}
+
+.article_index_top {
+    background: #fff;
+}
+
+.article_index_central {
+    background: #fff;
+    padding: 0 0.21333rem;
+}
+
+.van-grid-item__content::after {
+    border: none!important;
+}
+
+.van-grid-item__content img {
+    width: 45%!important;
+}
+
+.van-grid-item__text {
+    color: #979a9a;
+    font-size: .3rem;
+}
+
+.title {
+    font-size: .4rem;
+    font-weight: 600;
+}
+
+.description,
+.link-title,
+.detail {
+    font-size: .3rem!important;
+}
+
+.link-title {
+    color: red;
+}
+
+.share {
+    float: right;
+}
+
+.detail {
+    padding-bottom: 0.26667rem!important;
+}
+
+.van-grid {
+    padding: 0 .2rem;
+}
+
+.van-grid-item__content {
+    padding: 0.42667rem 0.1rem!important;
+}
+
+.van-grid-item__content img {
+    height: auto!important;
 }
