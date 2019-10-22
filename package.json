@@ -12,8 +12,10 @@
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "core-js": "^2.6.5",
+    "echarts": "^4.4.0",
     "qui-mobile": "git+http://dev.719471.net:6880/qy/qui/mobile.git",
     "register-service-worker": "^1.6.2",
+    "v-charts": "^1.19.0",
     "vant": "^2.2.9",
     "vue": "^2.6.10",
     "vue-clipboard2": "^0.3.1",
