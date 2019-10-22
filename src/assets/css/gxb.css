@@ -138,3 +138,7 @@
 .article-pay {
     font-size: .3rem;
 }
+
+.van-nav-bar__right {
+    margin-right: .1rem;
+}
