@@ -100,17 +100,24 @@
 }
 
 .detail {
+    padding-top: .3rem!important;
     padding-bottom: 0.26667rem!important;
-}
-
-.van-grid {
-    padding: 0 .2rem;
-}
-
-.van-grid-item__content {
-    padding: 0.42667rem 0.1rem!important;
 }
 
 .van-grid-item__content img {
     height: auto!important;
+}
+
+.pay_content_test {
+    background: #fff;
+    padding: .3rem .5rem;
+}
+
+.info .title {
+    font-size: .5rem;
+    padding-bottom: .1rem!important;
+}
+
+.content p {
+    text-indent: 2em;
 }
