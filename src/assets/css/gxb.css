@@ -127,16 +127,12 @@
 }
 
 .article-pay {
-    margin: .45rem 0;
+    font-size: .3rem;
     background-color: rgba(254,195,183,.5);
 }
 
 .lock {
     margin: 0 .1rem;
-}
-
-.article-pay {
-    font-size: .3rem;
 }
 
 .van-nav-bar__right {
