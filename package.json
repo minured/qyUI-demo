@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
     "core-js": "^2.6.5",
     "echarts": "^4.4.0",
     "qui-mobile": "git+http://dev.719471.net:6880/qy/qui/mobile.git",
