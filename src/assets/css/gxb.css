@@ -246,12 +246,14 @@
 }
 
 .stock-info .info .head .price {
-    margin: .85rem .1rem 0 .2rem;
+    margin: .5rem .3rem 0 .2rem;
 }
 
 .stock-info .info .head .price:first-child {
     color: #eb1919;
-    font-size: .9rem;
+    font-size: .8rem;
+    text-align: center;
+    width: 33%;
 }
 
 .stock-info .info .head .price .detail {
@@ -263,7 +265,7 @@
 }
 
 .detail .van-grid .van-grid-item  .van-grid-item__content {
-    padding: .1rem;
+    padding: .01rem  .1rem;
     display: block;
     text-align: left;
 }
@@ -327,4 +329,33 @@
 
 .page .van-tabbar {
     height: 1.8rem;
+}
+
+.detail .van-grid::after {
+    border: none!important;
+}
+
+.info .head > .detail {
+    padding-top: .16rem!important;
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(1),
+.detail .van-grid .van-grid-item:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(4),
+.detail .van-grid .van-grid-item:nth-of-type(5) {
+    flex-basis: 28%!important;
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(1) div span:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(3) div span:nth-of-type(2) {
+    color: rgb(31, 153, 31);
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(4) div span:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(6) div span:nth-of-type(2) {
+    color: #000;
+}
+
+.van-cell .van-cell__value span {
+    padding: 0 .09rem!important;
 }
