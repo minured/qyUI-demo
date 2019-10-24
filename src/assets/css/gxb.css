@@ -48,7 +48,7 @@
 
 .rotation .van-swipe__track .van-swipe-item img {
     border-radius: .3rem;
-    width: 95%!important;
+    width: 95% !important;
     height: 3rem;
     margin: 0 auto;
     display: block;
@@ -68,12 +68,12 @@
 }
 
 .van-grid-item .van-grid-item__content::after {
-    border: none!important;
+    border: none !important;
 }
 
 .van-grid-item .van-grid-item__content img {
-    width: 45%!important;
-    height: auto!important;
+    width: 45% !important;
+    height: auto !important;
 }
 
 .van-grid-item__content .van-grid-item__text {
@@ -89,7 +89,7 @@
 .description,
 .link-title,
 .detail {
-    font-size: .3rem!important;
+    font-size: .3rem !important;
 }
 
 .link-title {
@@ -101,8 +101,8 @@
 }
 
 .detail {
-    padding-top: .3rem!important;
-    padding-bottom: 0.26667rem!important;
+    padding-top: .3rem !important;
+    padding-bottom: 0.26667rem !important;
 }
 
 .pay_content_test {
@@ -125,7 +125,7 @@
 
 .article-pay {
     font-size: .3rem;
-    background-color: rgba(254,195,183,.5);
+    background-color: rgba(254, 195, 183, .5);
 }
 
 .lock {
@@ -155,7 +155,7 @@
 
 .diagnostic .van-search .van-search__content .van-cell {
     width: 70%;
-    background-color: rgba(50,50,50,.05);
+    background-color: rgba(50, 50, 50, .05);
     border-radius: .18667rem;
     font-size: .3rem;
     display: flex;
@@ -179,7 +179,7 @@
 }
 
 .van-list .padding {
-    border-top: .02667rem solid rgba(0,0,0,.25);
+    border-top: .02667rem solid rgba(0, 0, 0, .25);
 }
 
 .van-list .padding div .van-row {
@@ -218,7 +218,7 @@
     display: flex;
 }
 
-.stock .title  ul li {
+.stock .title ul li {
     padding: 0 .5rem;
     font-weight: normal;
     font-size: .35rem;
@@ -257,21 +257,21 @@
 }
 
 .stock-info .info .head .price .detail {
-    font-size: .38rem!important;
+    font-size: .38rem !important;
 }
 
 .stock-info .info .head .price .detail span:first-child {
     padding-right: .1rem;
 }
 
-.detail .van-grid .van-grid-item  .van-grid-item__content {
-    padding: .01rem  .1rem;
+.detail .van-grid .van-grid-item .van-grid-item__content {
+    padding: .01rem .1rem;
     display: block;
     text-align: left;
 }
 
 .van-grid-item__content div .title {
-    color: rgba(52,52,52,.5);
+    color: rgba(52, 52, 52, .5);
     font-size: .3rem;
     font-weight: normal;
 }
@@ -299,11 +299,11 @@
 }
 
 .van-cell .van-cell__value {
-    font-size: .3rem!important;
+    font-size: .3rem !important;
 }
 
 .van-cell__value .title {
-    font-size: .3rem!important;
+    font-size: .3rem !important;
     font-weight: normal;
     line-height: .78rem;
 }
@@ -324,7 +324,7 @@
 
 .van-tabbar-item .van-tabbar-item__text {
     font-size: .3rem;
-    color: rgba(49,49,49,.5);
+    color: rgba(49, 49, 49, .5);
 }
 
 .page .van-tabbar {
@@ -332,18 +332,18 @@
 }
 
 .detail .van-grid::after {
-    border: none!important;
+    border: none !important;
 }
 
 .info .head > .detail {
-    padding-top: .16rem!important;
+    padding-top: .16rem !important;
 }
 
 .detail .van-grid .van-grid-item:nth-of-type(1),
 .detail .van-grid .van-grid-item:nth-of-type(2),
 .detail .van-grid .van-grid-item:nth-of-type(4),
 .detail .van-grid .van-grid-item:nth-of-type(5) {
-    flex-basis: 28%!important;
+    flex-basis: 28% !important;
 }
 
 .detail .van-grid .van-grid-item:nth-of-type(1) div span:nth-of-type(2),
@@ -357,5 +357,65 @@
 }
 
 .van-cell .van-cell__value span {
-    padding: 0 .09rem!important;
+    padding: 0 .09rem !important;
+}
+
+.login .contents {
+    padding-top: 1rem;
+}
+
+.contents .van-cell-group .van-field {
+    border-radius: .26667rem;
+    background-color: #f2f2f2;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.2rem 0.4rem;
+}
+
+.contents .van-cell-group .van-field {
+    margin-top: .5rem;
+}
+
+.van-field .van-field__left-icon img {
+    width: .45rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+}
+
+.van-field__body {
+    font-size: .37333rem;
+    line-height: .86rem;
+}
+
+.contents .van-cell-group .action div {
+    display: inline-block;
+}
+
+.contents .van-cell-group .action a {
+    color: rgba(50, 50, 50, .75);
+    font-size: .32rem;
+}
+
+.contents .van-cell-group .action {
+    width: 88%;
+    margin: .6rem auto;
+}
+
+.contents .van-cell-group .action .find_password {
+    float: right;
+}
+
+.contents .van-cell-group .login_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display:block;
+    margin:0 auto;
+}
+
+.van-cell--center {
+    width: 45%;
 }
