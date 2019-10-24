@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <router-view v-if="$store.state.system"/>
+        <qy-css v-if="$store.state.system && $store.state.system.app_id" :href="'./static/css/'+$store.state.system.app_id+'.css'"/>
+        <router-view v-if="init"/>
         <img v-else class="cover" :src="'./static/unpackage/res/splashscreen/1080x1882.png'"/>
         <qy-share :store="$store"/>
     </div>
@@ -13,6 +14,7 @@
             async getMain() {
                 let data = await this.$http.get('app/main/info', {params: {host: window.location.host}})
                 if (data && data.id) {
+                    this.$store.commit('setSystem', {app_id: data.id})
                     this.$http.interceptors.request.use(config => {
                         config.headers['App-Id'] = data.id
                         return config
@@ -23,9 +25,15 @@
                     this.$store.commit('setSystem', data.system)
                     this.$store.commit('setUser', data.user)
                     this.$store.commit('setMenu', {bottom: data.menu_bottom})
+                    this.init = true;
                 }).catch((e) => {
                     this.qy.requestStatusHandle(e)
                 })
+            }
+        },
+        data() {
+            return {
+                init: false
             }
         },
         mounted() {

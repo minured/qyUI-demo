@@ -16,7 +16,14 @@ const mutations = {
         return (state.config = data)
     },
     setSystem(state, data) {
-        return (state.system = data)
+        if (state.system === null) {
+            state.system = data
+        } else {
+            for (let index in data) {
+                state.system[index] = data[index]
+            }
+        }
+        return true
     },
     setUser(state, data) {
         return (state.user = data)

@@ -1,0 +1,461 @@
+.article_head {
+    height: 1.46667rem;
+}
+
+.article_head ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    height: 0.93327rem;
+    padding: .26667rem .5rem;
+}
+
+.middle {
+    width: 75%;
+}
+
+.article_head ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user_avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user_avatar img {
+    height: .74667rem;
+}
+
+.article_head .middle .van-search {
+    padding: 0;
+    margin: 0 .32rem;
+    width: 100%;
+}
+
+.article_head .middle .van-search__content {
+    border-radius: .4rem;
+}
+
+.article_head .right {
+    float: right;
+}
+
+.rotation .van-swipe__track .van-swipe-item img {
+    border-radius: .3rem;
+    width: 95% !important;
+    height: 3rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.van-tab .van-ellipsis div div {
+    font-size: .34rem;
+}
+
+.article_index_top {
+    background: #fff;
+}
+
+.article_index_central {
+    background: #fff;
+    padding: 0 0.21333rem;
+}
+
+.van-grid-item .van-grid-item__content::after {
+    border: none !important;
+}
+
+.van-grid-item .van-grid-item__content img {
+    width: 45% !important;
+    height: auto !important;
+}
+
+.van-grid-item__content .van-grid-item__text {
+    color: #979a9a;
+    font-size: .3rem;
+}
+
+.title {
+    font-size: .4rem;
+    font-weight: 600;
+}
+
+.description,
+.link-title,
+.detail {
+    font-size: .3rem !important;
+}
+
+.link-title {
+    color: red;
+}
+
+.share {
+    float: right;
+}
+
+.detail {
+    padding-top: .3rem !important;
+    padding-bottom: 0.26667rem !important;
+}
+
+.pay_content_test {
+    background: #fff;
+    padding: .3rem .5rem;
+}
+
+.title_box {
+    margin-bottom: .25rem;
+}
+
+.info .title {
+    font-size: .5rem;
+    padding: 0;
+}
+
+.content p {
+    text-indent: 2em;
+}
+
+.article-pay {
+    font-size: .3rem;
+    background-color: rgba(254, 195, 183, .5);
+}
+
+.lock {
+    margin: 0 .1rem;
+}
+
+.van-nav-bar .van-nav-bar__right {
+    margin-right: .1rem;
+}
+
+.van-nav-bar .van-nav-bar__title {
+    font-weight: bold;
+}
+
+.van-nav-bar .van-icon {
+    font-size: .58rem;
+}
+
+.diagnostic .van-search .van-search__content {
+    padding-left: 0;
+}
+
+.diagnostic .van-search {
+    padding-top: .5rem;
+    padding-left: .7rem;
+}
+
+.diagnostic .van-search .van-search__content .van-cell {
+    width: 70%;
+    background-color: rgba(50, 50, 50, .05);
+    border-radius: .18667rem;
+    font-size: .3rem;
+    display: flex;
+    box-sizing: border-box;
+    padding: .26667rem .42667rem;
+    overflow: hidden;
+    color: #323233;
+    line-height: .64rem;
+    margin-left: 0;
+}
+
+.diagnostic .van-search .van-search__action {
+    padding: 0 .5rem 0 .3rem;
+}
+
+.diagnostic .van-search .van-search__action .van-button {
+    background-color: #eb1414;
+    color: #fff;
+    border-radius: .13333rem;
+    font-size: .3rem;
+}
+
+.van-list .padding {
+    border-top: .02667rem solid rgba(0, 0, 0, .25);
+}
+
+.van-list .padding div .van-row {
+    font-size: .35rem;
+    height: 1.5rem;
+    text-align: center;
+    border-bottom: .02667rem solid #ecf0f1;
+    display: flex;
+    align-items: center;
+}
+
+.van-col .van-icon {
+    color: #eb1414;
+    font-size: .4rem;
+    font-weight: bolder;
+}
+
+.van-col .up-down span {
+    padding: 0 .4rem;
+}
+
+.van-nav-bar__right .user_avatar {
+    display: block;
+}
+
+.van-nav-bar__right .user_avatar img {
+    vertical-align: middle;
+}
+
+.page .title {
+    background: #fff;
+}
+
+.page .title ul {
+    padding-left: 1.6rem;
+    display: flex;
+}
+
+.stock .title ul li {
+    padding: 0 .5rem;
+    font-weight: normal;
+    font-size: .35rem;
+}
+
+.add {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.add .van-button--normal {
+    border-radius: .66667rem;
+    border: .02667rem solid #eb1919;
+    color: #eb1919;
+    font-size: .4rem;
+    display: inline;
+}
+
+.stock-info .info {
+    background: #fff;
+}
+
+.stock-info .info .head {
+    display: flex;
+}
+
+.stock-info .info .head .price {
+    margin: .5rem .3rem 0 .2rem;
+}
+
+.stock-info .info .head .price:first-child {
+    color: #eb1919;
+    font-size: .8rem;
+    text-align: center;
+    width: 33%;
+}
+
+.stock-info .info .head .price .detail {
+    font-size: .38rem !important;
+}
+
+.stock-info .info .head .price .detail span:first-child {
+    padding-right: .1rem;
+}
+
+.detail .van-grid .van-grid-item .van-grid-item__content {
+    padding: .01rem .1rem;
+    display: block;
+    text-align: left;
+}
+
+.van-grid-item__content div .title {
+    color: rgba(52, 52, 52, .5);
+    font-size: .3rem;
+    font-weight: normal;
+}
+
+.van-grid-item__content div .value {
+    color: #eb1919;
+    font-size: .3rem;
+    padding-left: .1rem;
+}
+
+.time-sharing .van-col--8 {
+    width: 30%;
+}
+
+.van-tab__pane .van-list {
+    border: .02667rem solid #e5e7e9;
+}
+
+.van-tab__pane .van-list .van-cell:not(:last-child)::after {
+    border: none;
+}
+
+.van-tab__pane .van-list .van-cell {
+    padding: 0 .2rem;
+}
+
+.van-cell .van-cell__value {
+    font-size: .3rem !important;
+}
+
+.van-cell__value .title {
+    font-size: .3rem !important;
+    font-weight: normal;
+    line-height: .78rem;
+}
+
+.van-cell__value .price {
+    color: #eb1414;
+}
+
+.van-cell__value span {
+    padding: 0 .1rem;
+}
+
+.van-tabbar-item .van-tabbar-item__icon .van-icon {
+    font-size: .66667rem;
+    color: #ffcb00;
+    font-weight: bold;
+}
+
+.van-tabbar-item .van-tabbar-item__text {
+    font-size: .3rem;
+    color: rgba(49, 49, 49, .5);
+}
+
+.page .van-tabbar {
+    height: 1.8rem;
+}
+
+.detail .van-grid::after {
+    border: none !important;
+}
+
+.info .head > .detail {
+    padding-top: .16rem !important;
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(1),
+.detail .van-grid .van-grid-item:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(4),
+.detail .van-grid .van-grid-item:nth-of-type(5) {
+    flex-basis: 28% !important;
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(1) div span:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(3) div span:nth-of-type(2) {
+    color: rgb(31, 153, 31);
+}
+
+.detail .van-grid .van-grid-item:nth-of-type(4) div span:nth-of-type(2),
+.detail .van-grid .van-grid-item:nth-of-type(6) div span:nth-of-type(2) {
+    color: #000;
+}
+
+.van-cell .van-cell__value span {
+    padding: 0 .09rem !important;
+}
+
+.login .contents {
+    padding-top: 1rem;
+}
+
+.contents .van-cell-group .van-field {
+    border-radius: .26667rem;
+    background-color: #f2f2f2;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.2rem 0.4rem;
+}
+
+.contents .van-cell-group .van-field {
+    margin-top: .5rem;
+}
+
+.van-field .van-field__left-icon img {
+    width: .45rem;
+    margin-top: .15rem;
+    margin-right: .2rem;
+}
+
+.van-field__body {
+    font-size: .37333rem;
+    line-height: .86rem;
+}
+
+.contents .van-cell-group .action div {
+    display: inline-block;
+}
+
+.contents .van-cell-group .action a {
+    color: rgba(50, 50, 50, .75);
+    font-size: .32rem;
+}
+
+.contents .van-cell-group .action {
+    width: 88%;
+    margin: .6rem auto;
+}
+
+.contents .van-cell-group .action .find_password {
+    float: right;
+}
+
+.contents .van-cell-group .login_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display:block;
+    margin:0 auto;
+}
+
+.van-cell-group .register_agreement {
+    padding-top: .5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.van-checkbox__label {
+    font-size: .35rem;
+}
+
+.van-checkbox__label .protocol {
+    color: #eb1414;
+}
+
+.van-cell-group .register_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem!important;
+}
+
+.van-cell-group .find_password_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem!important;
+}
+
+.van-field__button .van-button--primary {
+    background-color: #eb1414;
+    border-color: #eb1414;
+    border-radius: .26667rem;
+}
