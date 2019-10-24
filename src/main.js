@@ -63,7 +63,6 @@ import {
 } from 'vant'
 import {quiMobile, http, encryption} from 'qui-mobile'
 import qy from './components/qy'
-import './assets/css/gxb.css'
 
 Vue.use(VueClipboard)
 Vue.use(Dialog)
