@@ -416,6 +416,46 @@
     margin:0 auto;
 }
 
-.van-cell--center {
-    width: 45%;
+.van-cell-group .register_agreement {
+    padding-top: .5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.van-checkbox__label {
+    font-size: .35rem;
+}
+
+.van-checkbox__label .protocol {
+    color: #eb1414;
+}
+
+.van-cell-group .register_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem!important;
+}
+
+.van-cell-group .find_password_button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 86%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem!important;
+}
+
+.van-field__button .van-button--primary {
+    background-color: #eb1414;
+    border-color: #eb1414;
+    border-radius: .26667rem;
 }
