@@ -1,6 +1,7 @@
 <template>
     <div id="app">
-        <qy-css v-if="$store.state.system && $store.state.system.app_id" :href="'./static/css/'+$store.state.system.app_id+'.css'"/>
+        <qy-css v-if="$store.state.system && $store.state.system.app_id"
+                :href="'./static/css/'+$store.state.system.app_id+'.css'"/>
         <router-view v-if="init"/>
         <img v-else class="cover" :src="'./static/unpackage/res/splashscreen/1080x1882.png'"/>
         <qy-share :store="$store"/>
@@ -164,5 +165,11 @@
 
     .van-hairline--bottom {
         border-bottom: 1px solid rgb(229, 229, 229);
+    }
+
+    .van-cell .avatar {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: .2rem;
     }
 </style>
