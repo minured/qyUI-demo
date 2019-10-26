@@ -214,14 +214,19 @@
 }
 
 .page .title ul {
-    padding-left: 1.6rem;
+    padding-left: 1.88rem;
     display: flex;
 }
 
 .stock .title ul li {
-    padding: 0 .5rem;
+    padding: 0 .32rem;
     font-weight: normal;
     font-size: .35rem;
+}
+
+.stock .title ul li:nth-of-type(3),
+.stock .title ul li:nth-of-type(4) {
+    padding: 0 .48rem;
 }
 
 .add {
@@ -458,4 +463,61 @@
     background-color: #eb1414;
     border-color: #eb1414;
     border-radius: .26667rem;
+}
+
+.title + .stock-list .van-icon {
+    color: #ffcb00;
+}
+
+.group {
+    padding: 0 0.42667rem;
+}
+
+.group .van-cell {
+    padding: 0.26667rem 0;
+}
+
+.group .van-cell {
+    display: flex;
+    align-items: center;
+}
+
+.group .van-cell .van-cell__value img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.qy-file-upload .van-uploader {
+    display: flex;
+    justify-content: center;
+    margin-top: .8rem;
+    margin-bottom: 1.2rem;
+}
+
+.van-uploader__wrapper .van-uploader__upload {
+    border-radius: 2.13333rem;
+    border-width: .03rem;
+    border-style: solid;
+}
+
+.van-cell-group .van-button {
+    border-radius: 1.06667rem;
+    background-color: #eb1414;
+    color: #fff;
+    letter-spacing: .21333rem;
+    font-size: .5rem;
+    width: 87%;
+    display: block;
+    margin: 1.4rem auto;
+}
+
+.contents .van-cell-group .van-field {
+    margin-top: 1rem;
+}
+
+.van-field__button .van-button {
+    margin: 0;
+    font-size: .35rem;
+    letter-spacing: .08rem;
+    width: 100%;
 }
